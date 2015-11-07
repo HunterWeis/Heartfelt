@@ -22,7 +22,21 @@ function pasteSelection(){
 					    console.log("score", sentiment, score)
 
 					    var scoreDiv = document.getElementById('score');
-					    scoreDiv.innerHTML = score;
+					    var bar = document.getElementById('barWidth');
+
+					    //Range from 0 to 2
+					    var percentValue = Math.floor((score + 1)/2 * 100)
+					    console.log(percentValue)
+
+					    //$(bar).css( "width", percentValue + "%" );
+
+					    $(bar).animate({
+							   	width: percentValue + "%"
+							  }, 1000, function() {
+						    // Animation complete.
+						  });
+
+					    scoreDiv.innerHTML = '' + percentValue + '%';
 			    }
 			});
 		});
