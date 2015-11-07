@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abril Fatface">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+
+    
+
+    <title>Heartfelt</title>
+
+    <script>
+    $(function() {
+      $(".meters > span").each(function() {
+        $(this)
+          .data("origWidth", $(this).width())
+          .width(0)
+          .animate({
+            width: $(this).data("origWidth")
+          }, 1200);
+      });
+    });
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+=======
+=======
+
+>>>>>>> fd6a4b9... add bootstrap and make the shit look beautiful
+    <script src="jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    
+
+    <title>Getting Started Extension's Popup</title>
+
+    <script>
+    $(function() {
+      $(".meters > span").each(function() {
+        $(this)
+          .data("origWidth", $(this).width())
+          .width(0)
+          .animate({
+            width: $(this).data("origWidth")
+          }, 1200);
+      });
+    });
+    </script>
+
+
+
+
+
+    <style>
+
+
+
+
+      body {
+        width: 300px;
+        height: 500px;
+      }
+    .meters {
+      height: 50px;  /* Can be anything */
+      position: relative;
+      margin: 20px 0 20px 0; /* Just for demo spacing */
+      background: rgb(200, 200, 200);
+      -moz-border-radius: 25px;
+      -webkit-border-radius: 25px;
+      border-radius: 25px;
+      padding: 10px;
+      -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+      -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+      box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+    }
+    .meters > span {
+      display: block;
+      height: 100%;
+         -webkit-border-top-right-radius: 8px;
+      -webkit-border-bottom-right-radius: 8px;
+             -moz-border-radius-topright: 8px;
+          -moz-border-radius-bottomright: 8px;
+                 border-top-right-radius: 8px;
+              border-bottom-right-radius: 8px;
+          -webkit-border-top-left-radius: 20px;
+       -webkit-border-bottom-left-radius: 20px;
+              -moz-border-radius-topleft: 20px;
+           -moz-border-radius-bottomleft: 20px;
+                  border-top-left-radius: 20px;
+               border-bottom-left-radius: 20px;
+      background-color: rgb(43,194,83);
+      background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(43,194,83)),
+        color-stop(1, rgb(84,240,84))
+       );
+      background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(43,194,83) 37%,
+        rgb(84,240,84) 69%
+       );
+      -webkit-box-shadow:
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+      -moz-box-shadow:
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+      box-shadow:
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .meters > span:after, .animates > span > span {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      background-image:
+         -webkit-gradient(linear, 0 0, 100% 100%,
+            color-stop(.25, rgba(255, 255, 255, .2)),
+            color-stop(.25, transparent), color-stop(.5, transparent),
+            color-stop(.5, rgba(255, 255, 255, .2)),
+            color-stop(.75, rgba(255, 255, 255, .2)),
+            color-stop(.75, transparent), to(transparent)
+         );
+      background-image:
+        -moz-linear-gradient(
+          -45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent
+         );
+      z-index: 1;
+      -webkit-background-size: 50px 50px;
+      -moz-background-size: 50px 50px;
+      background-size: 50px 50px;
+      -webkit-animation: move 2s linear infinite;
+      -moz-animation: move 2s linear infinite;
+         -webkit-border-top-right-radius: 8px;
+      -webkit-border-bottom-right-radius: 8px;
+             -moz-border-radius-topright: 8px;
+          -moz-border-radius-bottomright: 8px;
+                 border-top-right-radius: 8px;
+              border-bottom-right-radius: 8px;
+          -webkit-border-top-left-radius: 20px;
+       -webkit-border-bottom-left-radius: 20px;
+              -moz-border-radius-topleft: 20px;
+           -moz-border-radius-bottomleft: 20px;
+                  border-top-left-radius: 20px;
+               border-bottom-left-radius: 20px;
+      overflow: hidden;
+    }
+
+    .animates > span:after {
+      display: none;
+    }
+
+    @-webkit-keyframes move {
+        0% {
+           background-position: 0 0;
+        }
+        100% {
+           background-position: 50px 50px;
+        }
+    }
+
+    @-moz-keyframes move {
+        0% {
+           background-position: 0 0;
+        }
+        100% {
+           background-position: 50px 50px;
+        }
+    }
+
+
+    .orange > span {
+      background-color: #f1a165;
+      background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+      background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+      background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
+    }
+
+    .red > span {
+      background-color: #f0a3a3;
+      background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+      background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+      background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+    }
+
+    .nostripes > span > span, .nostripes > span:after {
+      -webkit-animation: none;
+      -moz-animation: none;
+      background-image: none;
+    }
+
+    #text{
+      width: 70%;
+      margin: 0 auto;
+      margin-top:30px;
+      padding: 20px;
+    }
+
+
+    #score{
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+
+
+    
+    </style>
+
+
+    
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+>>>>>>> af10ba4... push all works in few hours to homeee boiizz skillt
+
+    
+  </head>
+  <body>
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <center>
+
+    <h2 id="headTitle">Heartfelt</h2>
+
+      <hr>
+
+      <p id='text'>Highlight some text!</p>
+
+
+    
+
+
+
+    <p id='score'></p>
+    <p id='swear'></p>
+
+    </center>
+
+    <div class="meters animates" id="bars">
+      <span style="width: 0%" id="barWidth"><span></span></span>
+    </div>
+
+
+
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="swearlist.js"></script>
+    <script src="popup.js"></script>
+=======
+    <textarea id='text'></textarea>
+    <button id="paste">Paste</button>
+    <ul id='score'></ul>
+>>>>>>> af10ba4... push all works in few hours to homeee boiizz skillt
+=======
+    <center><textarea id='text'></textarea>
+    <button id="paste">Paste</button>
+=======
+    <center><p id='text'></p>
+
+
+    <button type="button" id="paste" class="btn btn-primary">Paste</button>
+
+
+>>>>>>> fd6a4b9... add bootstrap and make the shit look beautiful
+    <ul id='score'></ul>
+
+    </center>
+
+    <div class="meters animates" id="bars">
+      <span style="width: 0%" id="barWidth"><span></span></span>
+    </div>
+<<<<<<< HEAD
+>>>>>>> 68b6574... push progress bar of sentiment percentage
+=======
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+>>>>>>> fd6a4b9... add bootstrap and make the shit look beautiful
+  </body>
+</html>
+
