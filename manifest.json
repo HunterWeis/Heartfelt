@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension takes highlighted text and shows the sentiment to it",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://api.idolondemand.com",
+    "tabs",
+    "<all_urls>"
+
+  ],
+
+  "content_scripts":[
+  	{	
+	    "matches": ["<all_urls>"],
+	    "js": ["selection.js"],
+	    "run_at": "document_start",
+	    "all_frames": true
+  	}
+  ]
+
+
+}
+
