@@ -6,12 +6,11 @@
  -->
 <html>
   <head>
-
     <script src="jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
     
 
-    <title>Getting Started Extension's Popup</title>
+    <title>Sentimental Reinforcement</title>
 
     <script>
     $(function() {
@@ -38,6 +37,7 @@
       body {
         width: 300px;
         height: 500px;
+        font-family: sans-serif;
       }
     .meters {
       height: 50px;  /* Can be anything */
@@ -192,6 +192,11 @@
       font-family: sans-serif;
     }
 
+    #headTitle{
+      padding: 10px;
+      margin-top: 10px;
+    }
+
 
     
     </style>
@@ -210,7 +215,13 @@
   </head>
   <body>
 
-    <center><p id='text'></p>
+    <center>
+
+    <h2 id="headTitle">Reinforcement</h2>
+
+      <hr>
+
+      <p id='text'>Highlight some text!</p>
 
 
     <button type="button" id="paste" class="btn btn-primary">Paste</button>
@@ -226,10 +237,6 @@
     </div>
 
 
-<center>
-   <p id='Search'>Searching.</p>
-    <button type="button" id="search" class="btn btn-primary">Search</button>
-</center>
 
 
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
