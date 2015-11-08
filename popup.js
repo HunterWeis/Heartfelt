@@ -1,6 +1,7 @@
 $(function(){
-	$('#paste').click(function(){pasteSelection();});
-	$('#search').click(function(){console.log(fetchTweets("dicks"));});
+	//$('#paste').click(function(){pasteSelection();});
+	//$('#search').click(function(){console.log(fetchTweets("dicks"));});
+	pasteSelection();
 });
 
 function pasteSelection(){
