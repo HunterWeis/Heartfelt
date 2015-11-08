@@ -17,7 +17,15 @@ function pasteSelection(){
 			$.ajax({
 			    url: "https://api.havenondemand.com/1/api/sync/analyzesentiment/v1?text="+ response.data  +"&apikey=e541ed5b-d513-43a3-bdb2-898d63a50eb6",
 			    context: document.body,
-			   success: function(response){
+			  
+			   	 error: function (request, error) {
+       			 console.log(arguments);
+       			 alert(" Can't do because: " + error);
+       			 pasteSelection();
+    				},
+    		
+    
+    				success: function(response){
 			 
 					    var sentiment = response["aggregate"]["sentiment"]
 					  	var score = response["aggregate"]["score"]

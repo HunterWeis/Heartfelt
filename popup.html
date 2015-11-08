@@ -6,6 +6,9 @@
  -->
 <html>
   <head>
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abril Fatface">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+
     <script src="jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
     
@@ -38,12 +41,13 @@
         width: 300px;
         height: 500px;
         font-family: sans-serif;
+        background: rgb(209,238,252);
       }
     .meters {
       height: 50px;  /* Can be anything */
       position: relative;
       margin: 20px 0 20px 0; /* Just for demo spacing */
-      background: rgb(200, 200, 200);
+      background: rgb(251,43,105);
       -moz-border-radius: 25px;
       -webkit-border-radius: 25px;
       border-radius: 25px;
@@ -184,17 +188,28 @@
       margin: 0 auto;
       margin-top:30px;
       padding: 20px;
+      font-family: 'Josefin Slab',sans-serif;
+      
+      color: rgb(251,43,105);
+
     }
 
 
     #score{
-      font-size: 20px;
-      font-family: sans-serif;
+      font-size: 48px;
+      font-family: 'Josefin Slab',serif;
+      color: rgb(251,43,105);
+      font-weight: thin
+      margin: 0 auto
+
     }
 
     #headTitle{
       padding: 10px;
       margin-top: 10px;
+      font-family: 'Josefin Slab',serif;
+      
+      color: rgb(251,43,105);
     }
 
 
@@ -224,11 +239,11 @@
       <p id='text'>Highlight some text!</p>
 
 
-    <button type="button" id="paste" class="btn btn-primary">Paste</button>
+    
 
 
 
-    <ul id='score'></ul>
+    <p id='score'></p>
 
     </center>
 
