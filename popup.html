@@ -6,13 +6,16 @@
  -->
 <html>
   <head>
+
     <script src="jquery-1.11.3.min.js"></script>
-    <script src="popup.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    
+
     <title>Getting Started Extension's Popup</title>
 
     <script>
     $(function() {
-      $(".meter > span").each(function() {
+      $(".meters > span").each(function() {
         $(this)
           .data("origWidth", $(this).width())
           .width(0)
@@ -22,12 +25,22 @@
       });
     });
     </script>
+
+
+
+
+
     <style>
+
+
+
+
       body {
         width: 300px;
+        height: 500px;
       }
-    .meter {
-      height: 20px;  /* Can be anything */
+    .meters {
+      height: 50px;  /* Can be anything */
       position: relative;
       margin: 20px 0 20px 0; /* Just for demo spacing */
       background: rgb(200, 200, 200);
@@ -39,7 +52,7 @@
       -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
       box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
     }
-    .meter > span {
+    .meters > span {
       display: block;
       height: 100%;
          -webkit-border-top-right-radius: 8px;
@@ -79,7 +92,7 @@
       position: relative;
       overflow: hidden;
     }
-    .meter > span:after, .animate > span > span {
+    .meters > span:after, .animates > span > span {
       content: "";
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
@@ -123,7 +136,7 @@
       overflow: hidden;
     }
 
-    .animate > span:after {
+    .animates > span:after {
       display: none;
     }
 
@@ -167,27 +180,24 @@
     }
 
     #text{
-      width: 50%;
+      width: 70%;
       margin: 0 auto;
+      margin-top:30px;
+      padding: 20px;
     }
 
-    #paste{
-      margin-top: 10px;
-      margin: 10px auto;
-      position: center;
-      width: 50%;
-      height: 20px;
-    }
 
     #score{
       font-size: 20px;
       font-family: sans-serif;
     }
 
-    #bar{
-      margin-bottom: -25px;
-    }
+
+    
     </style>
+
+
+    
 
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -200,15 +210,22 @@
   </head>
   <body>
 
-    <center><textarea id='text'></textarea>
-    <button id="paste">Paste</button>
+    <center><p id='text'></p>
+
+
+    <button type="button" id="paste" class="btn btn-primary">Paste</button>
+
+
     <ul id='score'></ul>
 
     </center>
 
-    <div class="meter animate" id="bar">
+    <div class="meters animates" id="bars">
       <span style="width: 0%" id="barWidth"><span></span></span>
     </div>
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>
 
