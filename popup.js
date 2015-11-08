@@ -1,3 +1,347 @@
+var swearList = [ "2g1c",
+  "2 girls 1 cup",
+  "acrotomophilia",
+  "anal",
+  "anilingus",
+  "anus",
+  "arsehole",
+  "ass",
+  "asshole",
+  "assmunch",
+  "auto erotic",
+  "autoerotic",
+  "babeland",
+  "baby batter",
+  "ball gag",
+  "ball gravy",
+  "ball kicking",
+  "ball licking",
+  "ball sack",
+  "ball sucking",
+  "bangbros",
+  "bareback",
+  "barely legal",
+  "barenaked",
+  "bastardo",
+  "bastinado",
+  "bbw",
+  "bdsm",
+  "beaver cleaver",
+  "beaver lips",
+  "bestiality",
+  "bi curious",
+  "big black",
+  "big breasts",
+  "big knockers",
+  "big tits",
+  "bimbos",
+  "birdlock",
+  "bitch",
+  "black cock",
+  "blonde action",
+  "blonde on blonde action",
+  "blow j",
+  "blow your l",
+  "blue waffle",
+  "blumpkin",
+  "bollocks",
+  "bondage",
+  "boner",
+  "boob",
+  "boobs",
+  "booty call",
+  "brown showers",
+  "brunette action",
+  "bukkake",
+  "bulldyke",
+  "bullet vibe",
+  "bung hole",
+  "bunghole",
+  "busty",
+  "butt",
+  "buttcheeks",
+  "butthole",
+  "camel toe",
+  "camgirl",
+  "camslut",
+  "camwhore",
+  "carpet muncher",
+  "carpetmuncher",
+  "chocolate rosebuds",
+  "circlejerk",
+  "cleveland steamer",
+  "clit",
+  "clitoris",
+  "clover clamps",
+  "clusterfuck",
+  "cock",
+  "cocks",
+  "coprolagnia",
+  "coprophilia",
+  "cornhole",
+  "cum",
+  "cumming",
+  "cunnilingus",
+  "cunt",
+  "darkie",
+  "date rape",
+  "daterape",
+  "deep throat",
+  "deepthroat",
+  "dick",
+  "dildo",
+  "dirty pillows",
+  "dirty sanchez",
+  "dog style",
+  "doggie style",
+  "doggiestyle",
+  "doggy style",
+  "doggystyle",
+  "dolcett",
+  "domination",
+  "dominatrix",
+  "dommes",
+  "donkey punch",
+  "double dong",
+  "double penetration",
+  "dp action",
+  "eat my ass",
+  "ecchi",
+  "ejaculation",
+  "erotic",
+  "erotism",
+  "escort",
+  "ethical slut",
+  "eunuch",
+  "faggot",
+  "fecal",
+  "felch",
+  "fellatio",
+  "feltch",
+  "female squirting",
+  "femdom",
+  "figging",
+  "fingering",
+  "fisting",
+  "foot fetish",
+  "footjob",
+  "frotting",
+  "fuck",
+  "fuck buttons",
+  "fudge packer",
+  "fudgepacker",
+  "futanari",
+  "g-spot",
+  "gang bang",
+  "gay sex",
+  "genitals",
+  "giant cock",
+  "girl on",
+  "girl on top",
+  "girls gone wild",
+  "goatcx",
+  "goatse",
+  "gokkun",
+  "golden shower",
+  "goo girl",
+  "goodpoop",
+  "goregasm",
+  "grope",
+  "group sex",
+  "guro",
+  "hand job",
+  "handjob",
+  "hard core",
+  "hardcore",
+  "hentai",
+  "homoerotic",
+  "honkey",
+  "hooker",
+  "hot chick",
+  "how to kill",
+  "how to murder",
+  "huge fat",
+  "humping",
+  "incest",
+  "intercourse",
+  "jack off",
+  "jail bait",
+  "jailbait",
+  "jerk off",
+  "jigaboo",
+  "jiggaboo",
+  "jiggerboo",
+  "jizz",
+  "juggs",
+  "kike",
+  "kinbaku",
+  "kinkster",
+  "kinky",
+  "knobbing",
+  "leather restraint",
+  "leather straight jacket",
+  "lemon party",
+  "lolita",
+  "lovemaking",
+  "make me come",
+  "male squirting",
+  "masturbate",
+  "menage a trois",
+  "milf",
+  "missionary position",
+  "motherfucker",
+  "mound of venus",
+  "mr hands",
+  "muff diver",
+  "muffdiving",
+  "nambla",
+  "nawashi",
+  "negro",
+  "neonazi",
+  "nig nog",
+  "nigga",
+  "nigger",
+  "nimphomania",
+  "nipple",
+  "nipples",
+  "nsfw images",
+  "nude",
+  "nudity",
+  "nympho",
+  "nymphomania",
+  "octopussy",
+  "omorashi",
+  "one cup two girls",
+  "one guy one jar",
+  "orgasm",
+  "orgy",
+  "paedophile",
+  "panties",
+  "panty",
+  "pedobear",
+  "pedophile",
+  "pegging",
+  "penis",
+  "phone sex",
+  "piece of shit",
+  "piss pig",
+  "pissing",
+  "pisspig",
+  "playboy",
+  "pleasure chest",
+  "pole smoker",
+  "ponyplay",
+  "poof",
+  "poop chute",
+  "poopchute",
+  "porn",
+  "porno",
+  "pornography",
+  "prince albert piercing",
+  "pthc",
+  "pubes",
+  "pussy",
+  "queef",
+  "raghead",
+  "raging boner",
+  "rape",
+  "raping",
+  "rapist",
+  "rectum",
+  "reverse cowgirl",
+  "rimjob",
+  "rimming",
+  "rosy palm",
+  "rosy palm and her 5 sisters",
+  "rusty trombone",
+  "s&m",
+  "sadism",
+  "scat",
+  "schlong",
+  "scissoring",
+  "semen",
+  "sex",
+  "sexo",
+  "sexy",
+  "shaved beaver",
+  "shaved pussy",
+  "shemale",
+  "shibari",
+  "shit",
+  "shota",
+  "shrimping",
+  "slanteye",
+  "slut",
+  "smut",
+  "snatch",
+  "snowballing",
+  "sodomize",
+  "sodomy",
+  "spic",
+  "spooge",
+  "spread legs",
+  "strap on",
+  "strapon",
+  "strappado",
+  "strip club",
+  "style doggy",
+  "suck",
+  "sucks",
+  "suicide girls",
+  "sultry women",
+  "swastika",
+  "swinger",
+  "tainted love",
+  "taste my",
+  "tea bagging",
+  "threesome",
+  "throating",
+  "tied up",
+  "tight white",
+  "tit",
+  "tits",
+  "titties",
+  "titty",
+  "tongue in a",
+  "topless",
+  "tosser",
+  "towelhead",
+  "tranny",
+  "tribadism",
+  "tub girl",
+  "tubgirl",
+  "tushy",
+  "twat",
+  "twink",
+  "twinkie",
+  "two girls one cup",
+  "undressing",
+  "upskirt",
+  "urethra play",
+  "urophilia",
+  "vagina",
+  "venus mound",
+  "vibrator",
+  "violet wand",
+  "vorarephilia",
+  "voyeur",
+  "vulva",
+  "wank",
+  "wet dream",
+  "wetback",
+  "white power",
+  "women rapping",
+  "wrapping men",
+  "wrinkled starfish",
+  "xx",
+  "xxx",
+  "yaoi",
+  "yellow showers",
+  "yiffy",
+  "zoophilia"
+]
+
+
 $(function(){
 	//$('#paste').click(function(){pasteSelection();});
 	//$('#search').click(function(){console.log(fetchTweets("dicks"));});
@@ -20,8 +364,7 @@ function pasteSelection(){
 			  
 			   	 error: function (request, error) {
        			 console.log(arguments);
-       			 alert(" Can't do because: " + error);
-       			 pasteSelection();
+       			 text.innerHTML= "Nothing was highlighted. Try again!";
     				},
     		
     
@@ -33,6 +376,8 @@ function pasteSelection(){
 
 					    var scoreDiv = document.getElementById('score');
 					    var bar = document.getElementById('barWidth');
+
+					    var swearDiv = document.getElementById('swear');
 
 					    //Range from 0 to 2
 					    var percentValue = Math.floor((score + 1)/2 * 100)
@@ -46,58 +391,26 @@ function pasteSelection(){
 						    // Animation complete.
 						  });
 
-					    scoreDiv.innerHTML = '' + percentValue + '%';
+
+					    	var swearCount = 0;
+							for (var i = 0 ; i < swearList.length; i++){
+								if ((text.innerHTML).indexOf(swearList[i]) != -1){
+									swearCount++;
+								}
+							}
+
+
+					    scoreDiv.innerHTML = '' +'<cocks id="sentimentText">Sentiment:</cocks><br>'+ percentValue + '%'
+					    swearDiv.innerHTML = '' + 'Swear Count: ' + swearCount
+
+
+
+
 			    }
 			});
 		});
 	});
 }
-
-function fetchTweets(q) {
- 
-  var yql  = "https://query.yahooapis.com/v1/public/yql?q=show%20tables&diagnostics=true"
-  var base = "https://twitter.com/i/search/timeline?f=realtime&src=typd&include_entities=0&q=";
- 
- https://query.yahooapis.com/v1/public/yql?q=show%20tables&diagnostics=true"https://twitter.com/i/search/timeline?f=realtime&src=typd&include_entities=0&q=dicks%22&format=json
-  // Test the URL in YQL console to make sure it works
-  var url  = yql + base + encodeURIComponent(q) + "%22&format=json";
- 
-   // Make synchronous AJAX request to yql
-  var tweets = jQuery.ajax({type: "GET", url: url, dataType: 'json', async: false }).responseText;
- 
-
-  // Parse the JSON response
-  var data = JSON.parse(tweets);
-
-  console.log(data)
- 
-  // Return the HTML search results
-  return data.query.results.json.items_html;
-
-  /*
-  console.log(data.query.results.json.items_html)
-
-  $.ajax({
-			    url: "https://api.havenondemand.com/1/api/sync/analyzesentiment/v1?text="+ data.query.results.json.items_html[0]  +"&apikey=e541ed5b-d513-43a3-bdb2-898d63a50eb6",
-			    context: document.body,
-			   success: function(response){
-			 
-					    var sentiment = response["aggregate"]["sentiment"]
-					  	var score = response["aggregate"]["score"]
-					    console.log("score", sentiment, score)
-
-					    var scoreDiv = document.getElementById('score');
-					    var bar = document.getElementById('barWidth');
-
-
-					    
-			    }
-			});
-  */
-  
-}
-
-
 
 
 
