@@ -355,8 +355,7 @@ function pasteSelection(){
 		function(response){
 			var text = document.getElementById('text');
 			console.log(response.data);
-			//sentiment('text')
-			text.innerHTML= response.data;
+			var res = response.data;
 			
 			$.ajax({
 			    url: "https://api.havenondemand.com/1/api/sync/analyzesentiment/v1?text="+ response.data  +"&apikey=e541ed5b-d513-43a3-bdb2-898d63a50eb6",
@@ -364,12 +363,23 @@ function pasteSelection(){
 			  
 			   	 error: function (request, error) {
        			 console.log(arguments);
-       			 text.innerHTML= "Nothing was highlighted. Try again!";
+
+             if (text.innerHTML != "Nothing was highlighted. Try again!"){
+       			   text.innerHTML= "Nothing was highlighted. Try again!";
+            }
+
+
+            setTimeout(pasteSelection, 1000)
+
+
+
     				},
     		
     
     				success: function(response){
-			 
+
+              text.innerHTML= res;
+              			 
 					    var sentiment = response["aggregate"]["sentiment"]
 					  	var score = response["aggregate"]["score"]
 					    console.log("score", sentiment, score)
