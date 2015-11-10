@@ -1,5 +1,5 @@
 ## What is Heartfelt
-
+  
 Heartfelt is a chrome extension that allows the user to highlight text and determine the positivity and friendliness of that text through sentiment analysis. This can help people reconsider what they type before sending it, so they get the best responses from others.
 
 ## How do I install it?
