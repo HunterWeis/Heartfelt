@@ -1,9 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension takes highlighted text and shows the sentiment to it",
+  "name": "Heartfelt",
+  "description": "Get quick sentiment analysis on highlighted text.",
   "version": "1.0",
+  "icons": {
+    "16": "sentiment_icon.png",
+    "48": "sentiment_icon.png",
+    "128": "sentiment_icon.png"
+  },
 
   "browser_action": {
     "default_icon": "sentiment_icon.png",
