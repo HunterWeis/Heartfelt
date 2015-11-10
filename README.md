@@ -29,5 +29,4 @@ or leave a comment at http://devpost.com/software/heartfelt
 
 ## Other
 
--Made during YHacks 2015
--Project by Numaer Zaker and Hunter Weis.
+-Made during YHacks 2015 by Numaer Zaker and Hunter Weis.
