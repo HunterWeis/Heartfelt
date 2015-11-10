@@ -2,7 +2,7 @@
 chrome.extension.onMessage.addListener(function(request,sender,sendResponse){
 	if (request.method && request.method == "getSelection")
 	{
-		var ourString = window.getSelection().toString();
+		var ourString = document.getSelection().toString();
 
 		var arrayText = ourString.toString().split(' ');
 
